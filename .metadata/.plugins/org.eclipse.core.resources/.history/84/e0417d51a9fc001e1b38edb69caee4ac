@@ -1,0 +1,28 @@
+package view;
+
+import java.util.ArrayList;
+
+import model.Biblioteca;
+
+import model.Libro;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		
+		
+		Libro e = new Libro("HEllo"," mustafa", false);
+		Libro e2 = new Libro("kappa", "giolio", true);
+		Biblioteca torino = new Biblioteca("Moon");
+		 torino.addlibro(e);
+		 torino.addlibro(e2);
+		 e.isInPrestio();
+		 e.setInPrestito(false);
+		 ArrayList<Libro> libri = torino.getLibro();
+		 for (Libro dipendente2 : libri) {
+				System.out.println(dipendente2);
+			}
+		 
+	}
+
+}

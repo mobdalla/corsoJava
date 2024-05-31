@@ -1,0 +1,10 @@
+package db;
+
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class ProvinciaDAO {
+		private Connessione conn = new Connessione();
+		private Statement mycon;
+		private ResultSet rs;
+}

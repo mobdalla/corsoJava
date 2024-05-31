@@ -1,0 +1,5 @@
+package com.mus.services;
+
+public interface ProdottoServiceImple extends ProdottoService {
+
+}

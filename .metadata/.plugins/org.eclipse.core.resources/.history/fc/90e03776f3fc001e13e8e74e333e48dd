@@ -1,0 +1,40 @@
+package view;
+
+import java.util.ArrayList;
+
+import model.Biblioteca;
+import model.LibriPerBambini;
+import model.Libro;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		
+		
+		Libro e = new Libro("HEllo"," mustafa");
+		Libro e2 = new Libro("kappa", "giolio");
+		Libro e3 = new Libro("jjo", "giolio");
+		Libro a3 = new Libro("jjo", "giolio");
+		LibriPerBambini b3 =new LibriPerBambini("C.rosso", "jo",16);
+		Biblioteca t = new Biblioteca("Moon");
+		 t.addlibro(e);
+		 t.addlibro(e2);
+		 t.addlibro(b3);
+		// t.addlibro(a3);
+		// a3.setInPrestito(true);
+		 t.prestato(a3);
+		 System.out.println(t.perBambini(17));
+		 System.out.println(t.inBilioteca(e3));
+		 e.setInPrestito(true);
+		
+		 System.out.println(a3.isInPrestio());
+		 System.out.println(b3.getDescrizione());
+		 System.out.println(t.totInPrestito());
+		 System.out.println(e3.getDescrizione());
+		 System.out.println(t.nessunPrestito());
+		 t.restituito(e3);
+		 System.out.println(e3.isInPrestio());
+		 
+	}
+
+}

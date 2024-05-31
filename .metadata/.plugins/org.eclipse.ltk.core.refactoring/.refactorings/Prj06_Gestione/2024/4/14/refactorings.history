@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;dipendente&apos; from expression &apos;a1.getDipendente()&apos;&#x0D;&#x0A;- Original project: &apos;Prj06_Gestione&apos;&#x0D;&#x0A;- Variable name: &apos;dipendente&apos;&#x0D;&#x0A;- Destination method: &apos;view.Main.main(...)&apos;&#x0D;&#x0A;- Variable expression: &apos;a1.getDipendente()&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;dipendente&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;view{Main.java" name="dipendente" replace="true" replaceAllInThisFile="false" selection="388 18" stamp="1712245518837" varType="false" version="1.0"/>
+</session>

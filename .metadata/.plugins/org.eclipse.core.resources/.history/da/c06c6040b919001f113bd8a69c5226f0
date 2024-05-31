@@ -1,0 +1,31 @@
+package control;
+
+import java.io.IOException;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/province")
+public class Province extends HttpServlet {
+	
+		public Province() {
+			// TODO Auto-generated constructor stub
+			System.out.println("Server province creata");
+		}
+	
+		@Override
+		protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+			System.out.println("ho chiamato il metodo Get");
+			res.getWriter().print("ho chiamato il metodo Get");
+			
+		}
+	
+	
+	
+	
+	
+}

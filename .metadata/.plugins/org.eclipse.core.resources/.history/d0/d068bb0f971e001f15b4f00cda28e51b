@@ -1,0 +1,16 @@
+package com.mus.control;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.mus.entities.Prodotto;
+import com.mus.services.ProdottoService;
+
+@RestController
+public class ProdottoRest {
+
+	@Autowired
+	private ProdottoService service;
+	
+	
+}

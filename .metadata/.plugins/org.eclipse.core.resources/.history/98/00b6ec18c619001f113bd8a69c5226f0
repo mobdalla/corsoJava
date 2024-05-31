@@ -1,0 +1,22 @@
+package entities;
+
+public class ProvinciaDAO() {
+
+    private Connessione conn = new Connessione();
+   
+    private Statement mycon;
+    private PesultSet rs
+    public ArrayList<> getProvince(){
+        ArrayList<Provincia> province = new ArrayList<Provincia>();
+        conn = (Statement) conn.Connetti().createStatement();
+        while(rs.next()){
+            Provincia p = new Provincia();
+            p.setName(rs.getString("name"))
+            province.add(u);
+        }catch(SQLException e){
+            e.printStackTrace();
+        }
+
+        return province;
+    }
+}

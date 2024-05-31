@@ -1,0 +1,9 @@
+INDEX VERSION 1.134
+C:\Users\ICTS23-25.448\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4077008685.index
+\Prj08FilmDD\src\main\java
+C:\Users\ICTS23-25.448\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3411883182.index
+\Prj12_GestioneAziendal\src\main\java
+C:\Users\ICTS23-25.448\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2105136935.index
+\Prj09UserDB\src\main\java
+C:\Users\ICTS23-25.448\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3257612552.index
+\Prj12_Popolazioe\src\main\java

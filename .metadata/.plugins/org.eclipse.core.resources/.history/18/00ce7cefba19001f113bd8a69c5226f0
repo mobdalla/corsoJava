@@ -1,0 +1,34 @@
+package control;
+
+import java.io.IOException;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import servers.PopService;
+import servers.PopserviceImple;
+
+
+@WebServlet("/province")
+public class Province extends HttpServlet {
+		private PopService service= new PopserviceImple();
+		public Province() {
+			// TODO Auto-generated constructor stub
+			System.out.println("Server province creata");
+		}
+	
+		@Override
+		protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+			System.out.println("ho chiamato il metodo Get");
+			String regione= req.getParameter("regione");
+			service.getRegione();
+			res.getWriter().print("le provinece della regione :"+regione);
+		}
+	
+	
+	
+	
+	
+}
