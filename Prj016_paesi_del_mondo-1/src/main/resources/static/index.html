@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <script>
+        const Url ="/api/countries"
+        fetch(Url)
+                .then(res => res.json())
+                .then(listaCountries =>{
+                    for (const countre of listaCountries){
+                        const p = document.createElement('p')
+                        p.textContent = countre.name
+                        document.body.append(p)
+                    }
+                })
+    </script>
+
+    
+</body>
+</html>

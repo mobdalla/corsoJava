@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <script>
+        const URL = "/pokemon"
+        fetch(URL)
+            .then(res => res.json())
+            .then(listaPokemon =>{
+                for (const pokemon of listaPokemon){
+                    const Img = document.createElement('img')
+                    Img.src =pokemon.img
+                    document.body.append(Img)
+                }
+            })
+        
+    </script>
+
+</body>
+</html>
