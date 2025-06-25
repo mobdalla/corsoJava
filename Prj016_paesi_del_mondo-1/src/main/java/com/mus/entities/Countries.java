@@ -17,7 +17,7 @@ public class Countries {
 	private String region;
 	
 	public String getAlpha2code() {
-		return alpha2code;
+		return alpha2code.toLowerCase();
 	}
 	public void setAlpha2code(String alpha2code) {
 		this.alpha2code = alpha2code;

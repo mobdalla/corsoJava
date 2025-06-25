@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+>
+</head>
+<body>
+
+        <div class="container">
+            <h1>Prodotti</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>nome</th>
+                        <th>categoria</th>
+                        <th>origine</th>
+                        <th>prezzo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="p : ${prodotti}">
+                        <td th:text="${p.nome}"></td>
+                        <td th:text="${p.categoria}"></td>
+                        <td th:text="${p.origine}"></td>
+                        <td th:text="${p.prezzoKg}"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script>
+            const URL = "/api/prodotti";
+            fetch(URL)
+                .then(response => response.json())
+                .then(prodotti => {
+                    for (const prodotto of prodotti) {
+                        const TR = document.createElement("tr");
+                        const TD1 = document.createElement("td")
+                        const TD2 = document.createElement("td")
+                        const TD3 = document.createElement("td")
+                        const TD4 = document.createElement("td")
+                            TD1.textContent = p.nome;
+                            TD2.textContent = p.categoria;
+                            TD3.textContent = p.origine;
+                            TD4.textContent = p.prezzoKg;
+
+
+                            TR.append(TD1,TD2,TD3, TD4);
+                            document.querySelector("table > td").append();
+                    }
+                })
+        </script>
+</body>
+</html>

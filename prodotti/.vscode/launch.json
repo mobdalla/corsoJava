@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ProdottiApplication<prodotti>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.mustafa.prodotti.ProdottiApplication",
+            "projectName": "prodotti",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

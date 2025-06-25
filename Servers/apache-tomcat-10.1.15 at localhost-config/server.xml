@@ -140,7 +140,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="Prj08FilmDD" path="/Prj08FilmDD" reloadable="true" source="org.eclipse.jst.jee.server:Prj08FilmDD"/><Context docBase="Prj09UserDB" path="/Prj09UserDB" reloadable="true" source="org.eclipse.jst.jee.server:Prj09UserDB"/><Context docBase="Prj12_GestioneAziendal" path="/x.com" reloadable="true" source="org.eclipse.jst.jee.server:Prj12_GestioneAziendal"/><Context docBase="Prj12_Popolazioe" path="/Istat.it" reloadable="true" source="org.eclipse.jst.jee.server:Prj12_Popolazioe"/></Host>
+      <Context docBase="Prj08FilmDD" path="/Prj08FilmDD" reloadable="true" source="org.eclipse.jst.jee.server:Prj08FilmDD"/><Context docBase="Prj09UserDB" path="/Prj09UserDB" reloadable="true" source="org.eclipse.jst.jee.server:Prj09UserDB"/><Context docBase="Prj12_GestioneAziendal" path="/x.com" reloadable="true" source="org.eclipse.jst.jee.server:Prj12_GestioneAziendal"/><Context docBase="Prj12_Popolazioe" path="/Istat.it" reloadable="true" source="org.eclipse.jst.jee.server:Prj12_Popolazioe"/><Context docBase="Prj_servler" path="/Prj_servler" reloadable="true" source="org.eclipse.jst.jee.server:Prj_servler"/></Host>
     </Engine>
   </Service>
 </Server>
